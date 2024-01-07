@@ -4,8 +4,11 @@ html {
 }
 .top,
 .main {
-    color: #333;
-    font-family: Lato, sans-serif;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+h1 {
+  display: none;
 }
 .top {
   width: 500px;
@@ -44,7 +47,7 @@ html {
   margin: 0;
   padding: 0px;
 }
-h3,
+h2,
 .task-list__item {
   list-style: none;
 }
@@ -65,7 +68,7 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
+h2,
 .new-task__label {
   color: #333;
   font-weight: 700;
