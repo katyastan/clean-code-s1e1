@@ -4,7 +4,7 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
-h1 {
+.page-title {
   display: none;
 }
 .top {
@@ -13,7 +13,7 @@ h1 {
   display: block;
   text-align: right;
 }
-.top img {
+.top__eisenhower-matrix {
   width: 100%;
 }
 .top .more-info {
@@ -44,15 +44,16 @@ h1 {
   margin: 0;
   padding: 0px;
 }
-h2,
+.tasks-title,
 .task-list__item {
   list-style: none;
 }
 input,
-button {
+.task-list__item__edit {
   outline: none;
 }
-button {
+.task-list__item__edit,
+.task-list__item__delete {
   background: none;
   border: 0px;
   color: #888;
@@ -61,11 +62,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.task-list__item__edit:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h2,
+.tasks-title,
 .new-task__label {
   color: #333;
   font-weight: 700;
@@ -111,7 +112,7 @@ h2,
   justify-content: space-between;
   align-items: center;
 }
-.task-list__item > * {
+.task-list__item {
   vertical-align: middle;
 }
 
@@ -124,12 +125,12 @@ h2,
   font-size: 18px;
   width: 226px;
 }
-.task-list__item__delete img {
+.task-list__item__remove-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.task-list__item__delete img:hover {
+.task-list__item__remove-img:hover {
   transform: rotateZ(0);
 }
 

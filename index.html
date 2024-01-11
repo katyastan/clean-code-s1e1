@@ -7,20 +7,20 @@
 </head>
 <body class="page">
   <header class="top">
-    <img src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
+    <img class="top__eisenhower-matrix" src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
     <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="centered-main">
-    <h1>Todo App</h1>
+    <h1 class="page-title">Todo App</h1>
     <section id="add-section" class="new-task">
       <label class="new-task__label" for="new-task">Add Item</label>
       <div class="new-task__task-row">
         <input id="new-task" class="new-task__input" type="text">
-        <button>Add</button>
+        <button class="task-list__item__edit">Add</button>
       </div>
     </section>
     <section id="incomplete-tasks-section">
-      <h2>Todo</h2>
+      <h2 class="tasks-title">Todo</h2>
       <ul id="incomplete-tasks" class="task-list">
         <li class="task-list__item">
           <input type="checkbox" class="task-list__item__checkbox">
@@ -28,7 +28,7 @@
           <input type="text" class="task-list__item__input">
           <button class="task-list__item__edit">Edit</button>
           <button class="task-list__item__delete">
-            <img src="./remove.svg" alt="Removal button">
+            <img class="task-list__item__remove-img" src="./remove.svg" alt="Removal button">
           </button>
         </li>
         <li class="task-list__item edit-mode">
@@ -37,13 +37,13 @@
           <input type="text" value="Go Shopping" class="task-list__item__input">
           <button class="task-list__item__edit">Save</button>
           <button class="task-list__item__delete">
-            <img src="./remove.svg" alt="Removal button">
+            <img class="task-list__item__remove-img" src="./remove.svg" alt="Removal button">
           </button>
         </li>
       </ul>
     </section>
     <section id="completed-tasks-section">
-      <h2>Completed</h2>
+      <h2 class="tasks-title">Completed</h2>
       <ul id="completed-tasks" class="task-list">
         <li class="task-list__item">
           <input type="checkbox" checked class="task-list__item__checkbox">
@@ -51,7 +51,7 @@
           <input type="text" class="task-list__item__input">
           <button class="task-list__item__edit">Edit</button>
           <button class="task-list__item__delete">
-            <img src="./remove.svg" alt="Removal button">
+            <img class="task-list__item__remove-img" src="./remove.svg" alt="Removal button">
           </button>
         </li>
       </ul>
